@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./parejas.css">
+</head>
+<body>
+    <div>
+        <div class="cabecera">
+            <h1>Memory Call</h1>
+            <h2 id="textocabecera">Elige la dificultad</h2>
+            <select name="selector" id="selector" enabled>
+                <option value="0" default>--Reset--</option>
+                <option value="12">Fácil</option>
+                <option value="24">Normal</option>
+                <option value="36">Difícil</option>
+            </select>            
+        </div> 
+
+        <div id="contador" class="cabecera">
+            Puntos: 
+        </div>
+
+        <div id="contenedor" class="grid gridcontainer0 visible">            
+        </div>
+        <div class="cabecera">
+            <button id="rendicion" onclick="Rendicion()">Rendirse</button>
+        </div>
+    </div>     
+</body>
+<script src="./parejas.js"></script>
+</html>

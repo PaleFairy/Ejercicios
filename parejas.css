@@ -1,0 +1,76 @@
+body{
+    width: auto;
+    background-color: rgb(209, 209, 209);    
+}
+button{
+    font-family: fantasy;
+}
+.grid{
+    display: grid;        
+    grid-template-columns: 
+        auto auto auto auto auto auto;
+    grid-template-rows: 
+        50% 50%;        
+    justify-self: center;
+    justify-items: center;
+    justify-content: space-around;        
+    row-gap: 20px; 
+    margin: 20px;    
+}
+
+.gridcontainer1{
+    display: grid;    
+    background-color: rgb(18, 88, 85); 
+    grid-template-columns: 
+    auto auto auto auto auto auto;
+    grid-template-rows: 
+        auto auto;          
+    border-color: brown;
+    justify-items: center;
+    
+    
+}
+.gridcontainer2{
+    display: grid;    
+    background-color: rgb(110, 56, 43);
+    grid-template-columns: 
+    auto auto auto auto auto auto;
+    grid-template-rows: 
+        auto auto auto auto;     
+    border-color: gold; 
+    justify-items: center;
+}  
+.gridcontainer3{
+    display: grid;
+    background-color: rgb(199, 143, 21);
+    grid-template-columns: 
+    auto auto auto auto auto auto;
+    grid-template-rows: 
+    auto auto auto auto auto auto; 
+    border-color: brown; 
+    justify-items: center;                
+}
+img{
+    width: 100px;
+    height: 100px;   
+    padding: 5px;    
+    
+}
+.invisible{
+    opacity: 0;
+}
+.imagenes{     
+    background-image: url(../resources/parejas/heartstone.png); 
+    background-size: 110px 110px;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+.cabecera{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   font-family: fantasy;  
+   font-size: 25px; 
+   padding: 10px;
+}

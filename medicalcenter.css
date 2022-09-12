@@ -1,0 +1,91 @@
+body{
+    background-color: white;
+}
+.flex{
+    display: flex;
+}
+nav {    
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30PX;
+}
+.navmenu{
+    background-color: black;
+}
+.navhover:hover{
+    background-color: orange;
+}
+.gridcontainer1{
+    display: grid;
+    background-image: url(../resources/degradadoazul.png);
+    grid-template-columns: 
+        1fr 10% 35% 35% 10% 1fr;
+    grid-template-rows: 
+        75% 1fr;      
+    padding: 8%;      
+}
+.item{        
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 100%;
+    padding-bottom: 3%;
+    
+}
+.item1{    
+    grid-area: 1 / 2 / span 1 / span 2;
+    padding-top: 20px;  
+    justify-content: right; 
+}
+
+.item2{
+    grid-area: 1 / 4 / span 1 / span 2;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 150%;
+    padding-bottom: 3%;
+    
+}
+.columns1{
+    grid-area: 2 / 2 / span 1 / span 4; 
+    justify-self: center;             
+    background-color: rgb(189, 171, 209);
+    color: white;     
+    max-width: 1000px;
+    padding: 0 3% 3% 0;
+}
+.item3{
+    justify-content: right;
+    padding: 10px;
+}
+.gridcontainer2{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 
+        1fr 20% 20% 20% 20% 1fr;
+    grid-template-rows: 
+        50% 50%;    
+          
+}
+.titulocentral{
+    flex-direction: column;
+    text-align: center;
+    font-size: larger;
+    margin: 5%;
+}
+button{
+    border: 3px solid rgb(189, 171, 209);
+    max-width: 40%;
+    min-width: 150px;
+    min-height: 60px;    
+    color: rgb(189, 171, 209);
+    font-size: medium;
+   text-shadow: 1px 1px 1px rgb(52, 0, 110);
+   
+}
+button:hover{
+    color: white;
+    background-color: rgb(189, 171, 209);
+}
+
