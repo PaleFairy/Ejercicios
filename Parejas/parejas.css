@@ -8,7 +8,7 @@ body{
     justify-items: center;   
     min-height: 100%;
     background-color: rgb(209, 209, 209);   
-    background-image: url(../resources/marte.png); 
+    background-image: url(resources/marte.png); 
     background-size: cover;
     background-repeat: no-repeat;    
 }
@@ -90,7 +90,7 @@ h1{
     opacity: 0;
 }
 .fondoimagenes{     
-    background-image: url(../resources/celuloide.jpg); 
+    background-image: url(resources/celuloide.jpg); 
     background-size: 110px 110px;
     background-repeat: no-repeat;
     margin: 10px;    
@@ -115,7 +115,7 @@ h1{
     color: white;
     border-style: double;    
     border-radius: 10px;
-    background-image: url(../resources/cartel.png); 
+    background-image: url(resources/cartel.png); 
     background-size: auto;
     background-position-x: right;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ h1{
 }
 .ganar{
     font-size: 100px;
-    background-image: url('../resources/fireworks.gif');       
+    background-image: url('resources/fireworks.gif');       
     background-size: 600px 200px;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -154,7 +154,7 @@ h1{
     background-color: black;     
     font-family: 'rajdhani', sans-serif;  
     font-size: 48px;   
-    background-image: url(../resources/cartel.png); 
+    background-image: url(resources/cartel.png); 
     background-size: auto;
     background-position-x: right;
     background-position-y: center;

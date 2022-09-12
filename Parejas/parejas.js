@@ -1,13 +1,13 @@
 const imgArray = [
-    '../resources/bowie.png', '../resources/Butler.png',
-    '../resources/Chewbacca.png', '../resources/Chihiro.png',
-    '../resources/escarlata.png', '../resources/grogu.png',
-    '../resources/haku.png', '../resources/hansolo.png',
-    '../resources/laberinto.png', '../resources/mandalorian.png',
-    '../resources/Neo.png', '../resources/Trinity.png',
-    '../resources/dark1.png', '../resources/dark2.png',
-    '../resources/moto.png', '../resources/tetsuo.png',
-    '../resources/alien.png', '../resources/ripley.png',
+    'resources/bowie.png', 'resources/Butler.png',
+    'resources/Chewbacca.png', 'resources/Chihiro.png',
+    'resources/escarlata.png', 'resources/grogu.png',
+    'resources/haku.png', 'resources/hansolo.png',
+    'resources/laberinto.png', 'resources/mandalorian.png',
+    'resources/Neo.png', 'resources/Trinity.png',
+    'resources/dark1.png', 'resources/dark2.png',
+    'resources/moto.png', 'resources/tetsuo.png',
+    'resources/alien.png', 'resources/ripley.png',
 ];
 var order = [];
 var selector = document.getElementById("selector");
