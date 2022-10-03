@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JQuery</title>
+    <link rel="stylesheet" href="intro.css">
+
+<!--CDN de JQuery -->
+<!--Permite que el usuario se descargue desde el servidor más próximo-->
+<!--las librerías necesarias-->
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="intro.js"></script>
+
+</head>
+<body>
+    <h1>Introducción a JQuery</h1>
+
+    <h2>Sintaxis</h2>
+    <p>La sintaxis básica es:
+        <b>$(selector).action()</b>
+    </p>
+
+    <p>
+        <ul>
+            <li>El $ representa el acceso a JQuery</li>
+            <li>El <i>selector</i> localiza el/los elementos de HTML</li>
+            <li>La acción representa el método/función a ejecutar sobre el elemento</li>
+        </ul>
+    </p>
+    <p>Ejemplo:</p>
+    <p>Crear un botón que haga resaltar los span del documento (JS9)</p>
+
+    <button>Resaltar!</button>
+    <span>Programar es divertido</span>
+    <span>Programar es didáctico</span>
+    <span>Programar es fantástico</span>
+
+    <p>Trabajar con eventos de JQuery</p>
+    <p>3 Eventos:</p>
+
+    <ul>
+        <li>Al pasar el ratón encima de las p, éstas cambian a color verde</li>
+        <li>Al quitar el cursor, se vuelven azules</li>
+        <li>Al hacer click vuelven a su color original</li>
+        <li>Al hacer doble click se ponen en negrita</li>
+    </ul>
+
+    <p>
+        Eventos: mouseenter, mouseleave, click
+    </p>
+
+    <h3>Hide and Show</h3>
+    <p>Dos botones que escondan y restablezcan las p, respectivamente</p>
+
+    <span>
+        <button id="btnHide">Hide</button>
+        <button id="btnShow">Show/Reset</button>
+    </span>
+
+    <p>Botón que muestre/oculte un menú</p>
+    <button id="btnMenu">Mostrar/Ocultar menú</button>
+    <button id="btnAniMenu">Animar el menú</button>
+    <div id="container">
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Servicios</a>
+            <a href="">Contacto</a>
+        </nav>
+    </div>
+
+    <h3>Encadenar métodos</h3>
+
+    <button id="btnChain">Activar cadena de animaciones</button>
+    <div id="divChain"></div>
+
+</body>
+<!--<script src="vanilla.js"></script>-->
+
+</html>

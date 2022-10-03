@@ -1,0 +1,16 @@
+body{
+    background-color: dimgrey;
+    color:aliceblue;
+    text-align: center;
+}
+input{
+    background-color: transparent;
+    font-size: xx-large;
+}
+#tiempo{
+    display: flex;
+    
+}
+.tpo{
+    font-size: xx-large;
+}

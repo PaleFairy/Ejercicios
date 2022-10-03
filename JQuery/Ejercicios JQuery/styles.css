@@ -1,0 +1,17 @@
+header{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 60px;
+    padding: 3%;
+}
+#container{
+    font-family: Impact;
+    text-align: center;
+}
+.btn{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../Parejas/resources/moto.png");
+    background-size: 20px 20px;
+}

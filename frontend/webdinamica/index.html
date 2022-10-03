@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dinámica</title>
+    <!-- <link rel="stylesheet" href="./css/dropdown-menu.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal-form.css">    
+    <link rel="stylesheet" href="./css/dropdown-menu.css">
+    <link rel="stylesheet" href="./css/carousel.css">    
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/media-query.css">
+    
+    
+</head>
+<body>    
+        <h2>Formulario (modal) de Inicio de Sesión</h2>
+        <button id="btnLogin">Login</button>
+    
+   
+    <!-- <div id="modal2" class="modal2">
+        <div id="barra" class="barra">            
+            <div id="drop1" class="drop1">
+                <a id="primary" class="primary" href="#">enlace1</a>
+                <a class="secondary" href="#">enlace1a</a>
+                <a class="secondary" href="#">enlace1b</a>
+                <a class="secondary" href="#">enlace1c</a>
+            </div>
+            <div>
+                <a href="#">enlace2</a>
+            </div>
+            <div>
+                <a href="#">enlace3</a>
+            </div>
+            <div>
+                <a href="#">enlace4</a>
+            </div>            
+        </div>
+    </div> -->
+    <button id="btndrop" class="btndrop">drop</button>
+
+    <div id="loginForm" class="modal">
+
+        <!-- el title muestra mensaje al poner el cursor encima -->
+        <span id="btnClose" class="close" title="Cerrar">&times;</span>
+
+        <form action="#" class="modal-content animate">
+
+            <div class="img-container">
+                <img class="avatar" src="../resources/índice.jpg" alt="Avatar">
+            </div>
+            <div class="container">
+                <label for="user"><b>Usuario</b></label>
+                <input type="text" name="user" 
+                placeholder="Introduzca su nombre de usuario" required>
+
+                <label for="psw"><b>Contraseña</b> </label>
+                <input type="password" name="psw" 
+                placeholder="Introduzca su contraseña" required>
+
+                <button type="submit">Iniciar sesión</button>
+                <label class="remember">
+                    <input type="checkbox" name="remember" checked>
+                    Recordarme la próxima vez que inicie sesión
+                </label>                
+            </div>
+
+            <div class="container cancel">
+                <button id="btnCancel" type="button" class="btnCancel">
+                    Cancelar
+                </button>
+                <span class="psw">Has olvidado la 
+                    <a href="">contraseña</a>?
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <!-- dropdown hover button -->
+    <div class="dropdown">        
+        <button id="dropdown" class="btnDrop">Hover</button>
+        <div id="drop1" class="dropdown-content">
+            <a id="primary" class="primary" href="#">enlace1</a>
+            <a class="secondary" href="#">enlace1a</a>
+            <a class="secondary" href="#">enlace1b</a>
+            <a class="secondary" href="#">enlace1c</a>
+        </div>
+    </div>
+    <!-- Banner con carrusel de imágenes -->
+    <div class="carousel-container">
+
+        <!-- Cada imagen debe tener su propio contenedor -->
+
+        <!-- elementos img fisicos -->
+
+        <!-- <div class="carousel-img fade">
+            <div class="numbertext">1 de 3</div>
+            <img src="../resources/img1.jpg" alt="">
+            <div class="text">Info de Imagen</div>
+        </div>
+        <div class="carousel-img fade">
+            <div class="numbertext">1 de 3</div>
+            <img src="../resources/img2.jpg" alt="">
+            <div class="text">Info de Imagen</div>
+        </div>
+        <div class="carousel-img fade">
+            <div class="numbertext">1 de 3</div>
+            <img src="../resources/img3.jpg" alt="">
+            <div class="text">Info de Imagen</div>
+        </div> -->
+
+        <!-- elementos div con imagen de fondo -->
+        <div class="carousel-img fade">
+            <div class="pic first"></div>
+        </div>
+        <div class="carousel-img fade">
+            <div class="pic second"></div>
+        </div>
+        <div class="carousel-img fade">
+            <div class="pic third"></div>
+        </div>
+
+        <!-- botones de navegación -->
+        <a id="prev" class="prev" onclick="moveSlides(-1)">&#10094;</a>
+        <a id="next" class="next" onclick="moveSlides(1)">&#10095;</a>
+
+        <!-- Puntos/círculos con el thumbnail -->
+        <div class="dots-container" style="height: 15px;">
+            <span class="dot" onclick="moveDots(0)"></span>
+            <span class="dot" onclick="moveDots(1)"></span>
+            <span class="dot" onclick="moveDots(2)"></span>
+        </div>
+    </div>
+
+    <!-- Galería de imágenes -->
+
+    <!-- Hacer un grid sólamente usando divs -->
+
+    <div class="gallery-container">
+        <div class="row">
+            <div class="column"><img src="../resources/img1.jpg" alt="" onclick="showGallery(this)"></div>
+            <div class="column"><img src="../resources/img2.jpg" alt="" onclick="showGallery(this)"></div>
+            <div class="column"><img src="../resources/img3.jpg" alt="" onclick="showGallery(this)"></div>
+            <div class="column"><img src="../resources/img1.jpg" alt="" onclick="showGallery(this)"></div>
+        </div>
+    
+        <div class="exp-img-container">
+            <span class="btnClose" onclick="this.parentElement.style.display = 'none'">&times;</span>
+            <img id="expImg" src="../resources/img3.jpg" alt="">
+            <div id="imgtxt">Texto de imagen</div>
+        </div>
+    </div>
+</body>
+<script src="./js/script-vanilla.js"></script>
+</html>

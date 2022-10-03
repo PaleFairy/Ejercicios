@@ -53,6 +53,7 @@ body {
     flex-direction: column;
        }
 .galery > div{
+    
     overflow: hidden;
 }
 .texto1 {
@@ -73,11 +74,13 @@ body {
     overflow-y: visible;
 }
 
-.right {    
-    justify-content: left;
+.right {           
+    text-align: center;
     align-items: center; 
     padding-left: 3%;    
-    font-size: larger;          
+    font-size: larger;   
+    margin-left: 0 10px; 
+
 }
 button {
     border-color: black;
@@ -176,5 +179,18 @@ input, textarea {
 .fill2{
     background-color: rgb(21,21,48);    
 }
+.columns {
+    flex-direction: column;
+}
 
+@media (min-width: 420px) {
+    .columns{
+        flex-direction: column;
+    }
+}
+@media (min-width: 720px) {
+    .columns{
+        flex-direction: row;
+    }
+}
 

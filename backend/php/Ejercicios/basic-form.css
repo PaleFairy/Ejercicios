@@ -1,0 +1,65 @@
+body{
+    color: darkslategrey; 
+    background-color: aliceblue;  
+    font-family: system-ui;
+}
+
+h1{
+    text-align: center;
+    margin-top: 12vw;
+}
+
+form{
+    margin: auto;
+    width: 50%;
+    max-width: 400px;
+    display:flex;    
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(50, 65, 65);
+    color:rgb(242, 248, 248);
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+
+label{    
+    padding: 10px;
+}
+/* @keyframes infinite{
+   0% {border-bottom: 3px solid aliceblue;}
+   25% {border-bottom: 3px solid rgb(137, 225, 228);}
+   50% {border-bottom: 3px solid rgb(68, 168, 185);}
+   100% {border-bottom: 3px solid rgb(50, 65, 65);}
+} */
+.box{
+    width: 80%;
+    color: aliceblue;
+    border: none;
+    border-bottom: 3px solid rgb(104, 156, 165);
+    
+    background-color: transparent;
+   
+   
+    
+}
+
+.box:hover{
+    border-bottom: 3px solid black;
+    transition: border 0.5;
+}
+
+/*#button{
+    color: aliceblue;
+    margin-top: 10%;   
+    max-width: 10rem; 
+    max-height: 3em;
+    min-width: 10rem; 
+    min-height: 3em;
+    background-color: rgb(104,156,165) ;
+    border-radius: 10px;       
+}*/
+
+#button:hover{
+    background-color: rgb(142, 231, 231);
+    color: rgb(50,65,65);
+}

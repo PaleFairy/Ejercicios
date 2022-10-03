@@ -27,6 +27,7 @@ var aplauso = document.getElementById('aplauso');
 var pareja1 = "";
 var pareja2 = "";
 var puntos = 0;
+var globalPuntos=0;
 var contsurrender=0;
 txtcabecera.className="";
 txtcabecera.innerHTML="Selecciona dificultad";
@@ -214,6 +215,7 @@ function emparejar() {
     }
 }
 function Ganar() {
+    globalPuntos= (puntos / contsurrender)*100;
     surrender.className="button1";
     surrender.disabled=true;
     surrender2.className="button1";
@@ -224,11 +226,11 @@ function Ganar() {
     aplauso.play();
     selector.disabled=false;
     puntos=0;
-    contador.innerHTML = 'Puntos: ' + puntos;   
+    contador.innerHTML = 'Puntos: ' + globalPuntos;   
     selector.options[selector.selectedIndex].value='0'; 
    
     setTimeout(function(){
-        location.reload();
+        location.assign("../backend/php/Ejercicios/app db/index.php");
      }, 5000);
 }
 function Rendicion() {    

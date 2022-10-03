@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+
+@media (min-width: 420px) {
+    .columns{
+        flex-direction: column;
+    }
+}
+@media (min-width: 720px) {
+    .columns{
+        flex-direction: row;
+    }
+}
+

@@ -1,0 +1,12 @@
+body, button {
+    font-family: system-ui;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+

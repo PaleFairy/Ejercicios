@@ -1,0 +1,19 @@
+@media screen and (max-width: 850px) {
+    .modal-content{
+        /*margin: 10% auto 0 auto;*/
+        width: 80% !important;
+    }    
+}
+
+@media screen and (max-width: 420px) {
+    div.cancel{
+        text-align: center;
+    }
+    span.psw{
+        display: block !important;
+        float: none !important;
+    }    
+    .btnCancel{
+        width: 100% !important;
+    }
+}

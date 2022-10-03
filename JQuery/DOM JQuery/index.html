@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Manipulación del DOM con JQuery</h1>
+    <p>JQuery viene con algunos métodos preconfigurados
+        que facilitan enormemente el uso del DOM:
+    </p>
+
+    <ul>GET
+        <li>text() - retorna el contenido de un elemento como texto</li>
+        <li>html() - retorna el innerHTML de un elemento etiquetas HTML incluídas</li>
+        <li>val() - retorna el valor de los campos input</li>
+    </ul>
+
+    <p>Ejemplo</p>
+
+    <button id="btnTexto">Mostar texto</button>
+    <button id="btnHTML">Mostar HTML</button>
+    <button id="btnSet">Cambiar contenido</button>
+
+    <p id="pEjemplo">Este párrafo contiene <b>texto </b>en negrita</p>
+
+    <h2>GET/SET atributos</h2>
+
+    <button id="btnGAttr">Mostrar atributo</button>
+    <button id="btnSAttr">Cambiar atributo</button>
+
+    <p id="pAttr" style="color: red;">
+    Este párrafo contiene un atributo de color rojo</p>
+
+    <a href="https://www.google.es/" id="a">Link a Google</a>
+    <p id="pAttrPrint"></p>
+
+    <h2>Quitar/Añadir elementos</h2>
+
+    <h3>Añadir elementos nuevos </h3>
+
+    <ul>
+        <li>append() - Inserta el contenido al final de los elementos seleccionados</li>
+        <li>preprend() - Inserta el contenido a inicio de los elementos</li>
+        <li>after() - Inserta el contenido después del elemento seleccionado</li>
+        <li>before() - Inserta el contenido antes del elemento seleccionado</li>
+    </ul>
+
+    <p>Ejemplo</p>
+
+    <p id="pAppend">Esto es un párrafo</p>
+    <ul id="ulAppend">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ul>
+
+    <button id="btnAppend">Añadir contenido</button>
+    <button id="btnAppend2">Añadir múltiples elementos</button>
+
+    <h3>Eliminar/Limpiar elementos</h3>
+
+    <ul>
+        <li>remove() - Elimina el elemento seleccionado y sus descendientes</li>
+        <li>empty() - Elimina los descendientes de un elemento</li>
+    </ul>
+
+    <button id="btnRemove">Eliminar lista</button>
+    <button id="btnEmpty">Limpiar lista</button>
+</body>
+</html>

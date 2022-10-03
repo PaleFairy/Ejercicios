@@ -1,0 +1,149 @@
+/* carrusel de imágenes / banner */
+div.carousel-container {
+    box-sizing: border-box;
+
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+div.carousel-container * {
+    box-sizing: border-box;
+}
+/* los contenedores de las imágenes deben estar ocultos por defecto */
+
+div.carousel-img{
+    display: none;
+    
+}
+div.carousel-container img{
+    width: 100%;    
+}
+
+/* contenedores div con img de fondo */
+div.pic {
+    width: 100%;
+    height: 350px;
+
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic.first {
+    background-image: url("../../resources/img1.jpg");
+}
+.pic.second {
+    background-image: url("../../resources/img2.jpg");
+}
+.pic.third {
+    background-image: url("../../resources/img3.jpg");
+}
+
+/* animación de cambio de img en el carrusel */
+
+/* CSS */
+.fade {
+    animation: fade 1.5s;    
+}
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+/* JS */
+/* .fade {
+    transition: all 1.5s;
+    opacity: 1;
+} */
+
+/* botones de navegación del banner */
+.prev, .next {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* con translate cambiamos el punto de referencia que toma el objeto para 
+    alinearse (-50% lo mueve al centro del elemento, negativo porque se 
+    traslada al interior) */
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    font-weight: bold;
+
+    /* si 1rem=16px esto serían 18px */
+    font-size: 1.125rem;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    /* impide la selección de texto por el usuario */
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* texto descriptivo de las imágenes */
+
+div.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    /* la posición debe coincidir con el padding vertical 
+    para un correcto alineamiento*/
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+
+    width: 100%;
+    text-align: center;
+}
+
+/* indicadores de posición del carrusel */
+div.numbertext {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* los indicadores de punto(dots) */
+.dots-container :nth-child(1){
+    background-image: url(../../resources/img1.jpg);
+}
+.dots-container :nth-child(2){
+    background-image: url(../../resources/img2.jpg);
+}
+.dots-container :nth-child(3){
+    background-image: url(../../resources/img3.jpg);
+}
+.dot {
+    cursor: pointer;
+
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+    background-color: #cac3d3;
+    display: inline-block;
+    margin: 0 2px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease;
+}
+
+.dot:hover {
+    background-color: white;
+    transform: scale(5);
+}
